@@ -67,15 +67,21 @@
 </head>
 <body>
     <div id="container">
+        <audio id="birthdaySong" src="3id milad sa3id.mp3"></audio>
         <h1>Happy Birthday Asame !</h1>
         <h3>À ma chère cousine, en ce jour merveilleux de tes 21 ans,</h3>
         <p>Je veux simplement te dire à quel point tu es aimée. Ta présence apporte tant de joie dans nos vies et chaque instant passé avec toi est précieux. Que cette nouvelle année t'apporte tout le bonheur que tu mérites. Joyeux anniversaire ! Avec tout mon amour.</p>
         <canvas id="canvas"></canvas>
-        <button onclick="window.location.href = '#';">Découvrir</button>
+        <button onclick="playMusic()">kawtar</button>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script>
+        function playMusic() {
+            var audio = document.getElementById('birthdaySong');
+            audio.play();
+        }
+
         // Initialisation de la scène
         const scene = new THREE.Scene();
 
